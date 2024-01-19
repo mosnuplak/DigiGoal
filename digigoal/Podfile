@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'digigoal' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for digigoal
+  pod 'Kingfisher', '~> 7.0'
+  pod 'Socket.IO-Client-Swift', '~> 16.1.0'
+
+end
+
+
+# Add Development team for pods
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+            if RbConfig::CONFIG['host_cpu'] == 'arm64'
+              config.build_settings['EXCLUDEDARCHS'] = 'arm64'
+            end
+         end
+    end
+  end
+end
+
