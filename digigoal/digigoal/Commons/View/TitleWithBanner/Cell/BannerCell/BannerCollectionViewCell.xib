@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerCollectionViewCell" customModule="digigoal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="208" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w61-1N-fVd">
+                        <rect key="frame" x="0.0" y="0.0" width="208" height="142"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="w61-1N-fVd" secondAttribute="bottom" id="Mt6-oU-13g"/>
+                <constraint firstItem="w61-1N-fVd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vci-iO-eQL"/>
+                <constraint firstAttribute="trailing" secondItem="w61-1N-fVd" secondAttribute="trailing" id="rEK-Cc-RXG"/>
+                <constraint firstItem="w61-1N-fVd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wxB-j5-dNN"/>
+            </constraints>
+            <size key="customSize" width="208" height="142"/>
+            <connections>
+                <outlet property="bannerImageView" destination="w61-1N-fVd" id="gOa-if-Inr"/>
+            </connections>
+            <point key="canvasLocation" x="250.38167938931298" y="21.126760563380284"/>
+        </collectionViewCell>
+    </objects>
+</document>

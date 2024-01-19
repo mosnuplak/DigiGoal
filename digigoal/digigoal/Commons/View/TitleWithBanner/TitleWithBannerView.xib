@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleWithBannerView" customModule="digigoal" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerCollectionView" destination="gHn-bH-iYw" id="DDg-F8-Zdl"/>
+                <outlet property="titleLabel" destination="sTb-De-IgM" id="QET-K2-Tyw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xBM-5w-IfT">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTb-De-IgM">
+                            <rect key="frame" x="16" y="0.0" width="361" height="54"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="189.66666666666669" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gHn-bH-iYw">
+                            <rect key="frame" x="0.0" y="66" width="393" height="132"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="132" id="MU9-9h-nRX"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m5d-ON-c94">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="sTb-De-IgM" firstAttribute="leading" secondItem="xBM-5w-IfT" secondAttribute="leading" constant="16" id="2cX-X1-r5F"/>
+                        <constraint firstAttribute="trailing" secondItem="sTb-De-IgM" secondAttribute="trailing" constant="16" id="BdO-US-09D"/>
+                        <constraint firstItem="gHn-bH-iYw" firstAttribute="leading" secondItem="xBM-5w-IfT" secondAttribute="leading" id="Ury-3S-Q67"/>
+                        <constraint firstAttribute="trailing" secondItem="gHn-bH-iYw" secondAttribute="trailing" id="p7K-HW-NEC"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xBM-5w-IfT" secondAttribute="bottom" id="6Xo-1w-jKG"/>
+                <constraint firstItem="xBM-5w-IfT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Sar-6p-aoi"/>
+                <constraint firstAttribute="trailing" secondItem="xBM-5w-IfT" secondAttribute="trailing" id="fSc-Ek-nNP"/>
+                <constraint firstItem="xBM-5w-IfT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gKZ-M6-QJe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-241.5492957746479"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
